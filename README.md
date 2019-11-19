@@ -9,6 +9,14 @@ HealthDataSync is a Swift library that simplifies and automates the export of He
 
 Once the required protocols have been implemented, the HDSManager can be initialized and used to request permissions from the user to access the specified HealthKit data types defined in the HDSExternalObjectProtocol; start and stop the underlying HKObserverQuery that will observe changes to the specified HealthKit data types and call back to your application when changes occur; and execute the underlying HKAnchoredObjectQuery to fetch changes in the requested HealthKit data and synchronize them with your HDSExternalStoreProtocol implementation.
 
+## Installation
+
+HealthDataSync uses **Swift Package Manager** to manage dependencies. It is recommended that you use Xcode 11 or newer to add HealthDataSync to your project.
+
+1. Using Xcode 11 go to File > Swift Packages > Add Package Dependency
+2. Paste the project URL: https://github.com/microsoft/health-data-sync
+3. Click on next and select the project target
+
 ## Basic Implementation
 
 ### Implement HDSExternalStoreProtocol
